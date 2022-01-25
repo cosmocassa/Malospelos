@@ -12,7 +12,7 @@ header{
     flex-wrap: wrap;
 }
 .logo{
-    margin: 300px auto auto 650px;
+    margin: 300px auto auto 550px;
     width: 100%;
 }
 
@@ -50,7 +50,7 @@ main{
     background-attachment:fixed;
     background-size:20%;
     box-sizing: border-box;
-    margin: 0;
+    margin: 10px;
     padding: 0;
     
 }
@@ -58,10 +58,17 @@ main{
 .zona-titular h1{
     font-family: 'Luckiest Guy', cursive;
     font-size: 180px;
-    padding: 50px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     color:lightcyan;
     margin: 0;
-    ;
+}
+
+.zona-titular h2{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+    padding: 0px 0px 0px 0px;
+    color:black;
+    margin: 0;
 }
 .zona-titular h5{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -70,8 +77,8 @@ main{
     background-color: transparent;
     height: 100%x;
     width: 300px;
-    margin: 40px auto;
-    box-shadow: 10px 10px 20px rgb(230, 155, 17);
+    margin: 10px auto;
+    box-shadow: 0px 10px 20px rgb(230, 155, 17);
     background-color: white;
     cursor: pointer;
 }
@@ -80,6 +87,7 @@ main{
     display: flex;
     height: 200px;
     width: 100%;
+    margin-top: 50px;
 }
 .sec1 div{
     width: 100%;
@@ -142,8 +150,64 @@ main{
 
 footer{
     margin-top: 2000px;
+    display: flex;
+    background-color: burlywood;
+
+}
+
+footer div h2{
+    margin-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+footer div img{
+    width: 5%;
+    background: transparent;
+    margin-left: 20px;
 }
    
+.sea{
+    
+    background-image: url(../img/mar3.png);
+    background-repeat: repeat;
+    background-attachment:fixed;
+    margin-top: 0;
+    display: flex;
+    height: 600px;
+}
+
+.sea div img{
+    width:300px;
+    height: 300px;
+    display: flex;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 90px;
+    margin-right: 100px;
+   
+    
+}
+
+.sea img{
+    height: 35%;
+    display:inline-block;
+    margin-top: 0;
+}
+div #estrella{
+    align-items: center;
+}
+#estrella{
+    margin: 692px 0 40px 781px;
+    height: 200px;
+    width: 200px;
+}
+#estrella2{
+    margin: 618px 0 41px -49px;
+    height: 150px;
+    width: 150px;
+    
+}
    span:nth-child(4n) { color:hsl(50, 75%, 55%); text-shadow:1px 1px hsl(50, 75%, 45%), 2px 2px hsl(50, 45%, 45%), 3px 3px hsl(50, 45%, 45%), 4px 4px hsl(50, 75%, 45%); }
    span:nth-child(4n-1) { color:hsl(135, 35%, 55%); text-shadow:1px 1px hsl(135, 35%, 45%), 2px 2px hsl(135, 35%, 45%), 3px 3px hsl(135, 35%, 45%), 4px 4px hsl(135, 35%, 45%); }
    span:nth-child(4n-2) { color:hsl(155, 35%, 60%); text-shadow:1px 1px hsl(155, 25%, 50%), 2px 2px hsl(155, 25%, 50%), 3px 3px hsl(155, 25%, 50%), 4px 4px hsl(140, 25%, 50%); }
