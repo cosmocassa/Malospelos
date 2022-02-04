@@ -5,21 +5,89 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="css\menu.css">
         <link rel="stylesheet" href="css\normalize.css">
         <link rel="stylesheet" href="css\main.css">
+        <!----===== Boxicons CSS ===== -->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
         <script defer src="js\malospelos.js"></script>
+
     </head>
     <body>
+        <!------MENU-->
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                        <img src="img\logo.png" alt="" >
+                    </span>
+                </div>
+                <i class='bx bx-chevron-right toggle'></i>
+            </header>
+    
+            <div class="menu-bar">
+                <div class="menu">
+                    <li class="search-box">
+                        <i class='bx bx-search icon'></i>
+                        <input type="text" placeholder="">
+                    </li>
+    
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bxs-hand-up icon'></i>
+                                <span class="text nav-text">Arriba arriba!!</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="javascript:pageScroll('sea')">
+                                <i class='icon'><img id="iconoMar" src="img\wave.png"></i>
+                                <span class="text nav-text"></span></span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="javascript:pageScroll('erizo1')">
+                                <i class='icon'><img id="iconoMar" src="img\erizoIcono.png"></i>
+                                <span class="text nav-text"></span></span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="javascript:pageScroll('estrellita')">                       
+                                <i class='icon'><img id="iconoMar" src="img\botellitaIcono.png"></i>
+                                <span class="text nav-text"></span></span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="javascript:pageScroll('gatoLuz')">                             
+                                <i class='icon'><img id="iconoMar" src="img\gatoicono.png"></i>
+                                <span class="text nav-text"></span></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="bottom-content">
+                    <li class="mode">
+                        <div class="sun-moon">
+                            <i class='bx bx-moon icon moon'></i>
+                            <i class='bx bx-sun icon sun'></i>
+                        </div>
+                        <span class="mode-text text">Dark mode</span>
+    
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </nav>
+        <!--FIN MENU-->    
         <header>
             <div class="logo">
                 <img src="img\logo.png" alt="" class="logo-per">
             </div>
             
-            <!--<section class="main-menu"> 
-                <a href="" class="menu-option">INICIO</a>
-                <a href="" class="menu-option">CONTACTO</a>
-                <a href="https://es.wallapop.com/app/user/abif-390917043-vjrdkde9p96k/published" class="menu-option">TIENDA</a>
-            </section>-->
+          
             
         </header>
 

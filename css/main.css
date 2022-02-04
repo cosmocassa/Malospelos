@@ -1,9 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
 @import url(https://fonts.googleapis.com/css?family=Tangerine:700,300,600);
-
-body{
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+
 
 header{
     width: 100%;
@@ -41,8 +44,8 @@ header{
  */
 
 main{
-    width: 100%;
-    margin:0 auto;
+    width: auto;
+    margin: 0 auto 0 97px;
 }
 
 .zona-titular{
@@ -330,3 +333,5 @@ span{
     margin: 100px 0 0 650px;
     filter: brightness(0);
 }
+
+
