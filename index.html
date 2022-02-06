@@ -7,6 +7,7 @@
         <title>Document</title>
         <link rel="stylesheet" href="css\menu.css">
         <link rel="stylesheet" href="css\normalize.css">
+        <link rel="stylesheet" href="css\texto.css">
         <link rel="stylesheet" href="css\main.css">
         <!----===== Boxicons CSS ===== -->
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -34,9 +35,10 @@
     
                     <ul class="menu-links">
                         <li class="nav-link">
-                            <a href="#">
-                                <i class='bx bxs-hand-up icon'></i>
-                                <span class="text nav-text">Arriba arriba!!</span>
+                            <a href="javascript:pageScroll('zona-titular')">
+                                <i class='icon'>
+                                    <img id="iconoInicio" src="img\inicio.png"></i>
+                                    <span class="text nav-text">Arriba arriba!!</span>
                             </a>
                         </li>
                         <li class="nav-link">
@@ -63,6 +65,7 @@
                                 <span class="text nav-text"></span></span>
                             </a>
                         </li>
+                        
                     </ul>
                 </div>
     
@@ -92,7 +95,7 @@
         </header>
 
         <main>
-            <div class="zona-titular">
+            <div id="zona-titular" class="zona-titular">
                 <h2>El trastero</h2>     
                 <h2>de la</h2>     
                 <h1><span>M</span><span>A</span><span>L</span><span>O</span><span>S</span><span>  </span><span>P</span><span>E</span><span>L</span><span>O</span><span>S</span></h1>     
@@ -133,19 +136,27 @@
             <div id="sea">
                 <section id="scroll-content-mar" class="fadeTop"></section>
 
-                <div>
+                <div id="piedramar1">
                     <img src="..\img\piedramar1.png" alt="">
                 
                 </div>
 
-                <div>
+                <div id="piedramar2">
                     <img src="..\img\piedramar2.png" alt="">                
                 </div>
 
-                <div>
+                <div id="piedramar3">
                     <img src="..\img\piedramar3.png" alt="">
                 </div>               
             </div>
+
+            <div id="table">
+                <div id="centeralign">
+                  <h1>Felicidad</h1>
+                  <p>La felicidad no llega cuando conseguimos lo que deseamos, sino cuando disfrutamos lo que tenemos.</p>
+                </div>
+              </div>
+
 
             <div class="erizoDivClass">
                 <div>
@@ -156,12 +167,38 @@
                     <img id="erizo2" src="..\img\erizo2.png" alt="">
                 </div>
             </div>
+            <div id="familiaErizo">
+                <div>
+                    <img id="pared" src="..\img\pared.png" alt="">
+                </div>
+                <div>
+                    <img id="chimenea" src="..\img\chimenea.png" alt="">
+                </div>
+                <div>
+                     <img id="cuadro1" src="..\img\cuadro1.png" alt="">
+                </div>
+                <div>
+                    <img id="cuadro2" src="..\img\cuadro2.png" alt="">
+                </div>
+                <div>
+                    <img id="cuadro3" src="..\img\cuadro3.png" alt="">
+                </div>
+                <div>
+                    <img id="alfombra" src="..\img\alfombra.png" alt="">
+                </div>
+                <div>
+                    <img id="mamaErizo" src="..\img\mamaErizo.png" alt="">
+                </div>
+               <div>
+                    <img id="mesa" src="..\img\mesa.png" alt="">
+                </div>
+                
+            </div>
 
 
             <div id="velaIdDiv">
                 
-                <section id="scroll-content" class="fadeTop">
-                </section>
+                <section id="scroll-content" class="fadeTop"></section>
                 <div id="velaId">
                     <img id="estrellita" src="..\img\estrellitas.png">
                     <section class="fotos_botes">
