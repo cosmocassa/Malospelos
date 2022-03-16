@@ -7,16 +7,17 @@
         <title>Document</title>
         <link rel="stylesheet" href="css\menu.css">
         <link rel="stylesheet" href="css\normalize.css">
-        <link rel="stylesheet" href="css\texto.css">
+        <link rel="stylesheet" href="css\estrellas.css">--> 
         <link rel="stylesheet" href="css\main.css">
         <!----===== Boxicons CSS ===== -->
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
         <script defer src="js\malospelos.js"></script>
+        <script defer src="js\estrellas.js"></script>
 
     </head>
     <body>
-        <!------MENU-->
-        <nav class="sidebar close">
+        
+        <nav class="sidebar close"><!------MENU-->
             <header>
                 <div class="image-text">
                     <span class="image">
@@ -32,7 +33,6 @@
                         <i class='bx bx-search icon'></i>
                         <input type="text" placeholder="">
                     </li>
-    
                     <ul class="menu-links">
                         <li class="nav-link">
                             <a href="javascript:pageScroll('zona-titular')">
@@ -48,7 +48,7 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="javascript:pageScroll('erizo1')">
+                            <a href="javascript:pageScroll('paraErizo')">
                                 <i class='icon'><img id="iconoMar" src="img\erizoIcono.png"></i>
                                 <span class="text nav-text"></span></span>
                             </a>
@@ -67,8 +67,9 @@
                         </li>
                         
                     </ul>
+                    
                 </div>
-    
+                
                 <div class="bottom-content">
                     <li class="mode">
                         <div class="sun-moon">
@@ -76,22 +77,21 @@
                             <i class='bx bx-sun icon sun'></i>
                         </div>
                         <span class="mode-text text">Dark mode</span>
-    
+                        
                         <div class="toggle-switch">
                             <span class="switch"></span>
                         </div>
                     </li>
+                    <i onClick="window.location.reload();" class='bx bx-refresh'></i>
+
                 </div>
             </div>
-        </nav>
-        <!--FIN MENU-->    
+        </nav><!--FIN MENU-->  
+          
         <header>
             <div class="logo">
                 <img src="img\logo.png" alt="" class="logo-per">
-            </div>
-            
-          
-            
+            </div>    
         </header>
 
         <main>
@@ -112,138 +112,154 @@
 
             <div class="sec-post">
                 <div>
-                    <img src="..\img\bote1.jpg" alt="">
-                    <h4>"No tires el bote, que lo usare para algo...</h4>
+                    <img src="img\bote1.jpg" alt="">
+                    <h4>"No tires el bote, que lo usare para algo.</h4>
                     <p>Lorem fistrum no te digo trigo por no llamarte Rodrigor mamaar a peich papaar papaar qué dise usteer fistro qué dise usteer tiene musho peligro. Te va a hasé pupitaa amatomaa al ataquerl al ataquerl sexuarl amatomaa condemor fistro. No puedor qué dise usteer pupita va usté muy cargadoo a wan pupita jarl. Pecador jarl llevame al sircoo apetecan. Te va a hasé pupitaa a wan hasta luego Lucas de la pradera ese que llega apetecan a peich ese que llega hasta luego Lucas por la gloria de mi madre a peich.</p>
                 </div>
            
                 <div>
-                    <img src="..\img\dibujo1.jpg" alt="">
+                    <img src="img\dibujo1.jpg" alt="">
                      <h4>Dibujos</h4>
                     <p>Lorem fistrum no te digo trigo por no llamarte Rodrigor mamaar a peich papaar papaar qué dise usteer fistro qué dise usteer tiene musho peligro. Te va a hasé pupitaa amatomaa al ataquerl al ataquerl sexuarl amatomaa condemor fistro. No puedor qué dise usteer pupita va usté muy cargadoo a wan pupita jarl. Pecador jarl llevame al sircoo apetecan. Te va a hasé pupitaa a wan hasta luego Lucas de la pradera ese que llega apetecan a peich ese que llega hasta luego Lucas por la gloria de mi madre a peich.</p>
                 </div>
 
                 <div>
-                    <img src="..\img\erizo1.jpg" alt="">
+                    <img src="img\erizo1.jpg" alt="">
                     <h4>"Ui!Que piedra mas bonita, parece..."</h4>
                     <p>Lorem fistrum no te digo trigo por no llamarte Rodrigor mamaar a peich papaar papaar qué dise usteer fistro qué dise usteer tiene musho peligro. Te va a hasé pupitaa amatomaa al ataquerl al ataquerl sexuarl amatomaa condemor fistro. No puedor qué dise usteer pupita va usté muy cargadoo a wan pupita jarl. Pecador jarl llevame al sircoo apetecan. Te va a hasé pupitaa a wan hasta luego Lucas de la pradera ese que llega apetecan a peich ese que llega hasta luego Lucas por la gloria de mi madre a peich.</p>  
                 </div>
             </div>
             
             <div>
-                <img id= "estrella" src="..\img\estrella2.png" alt="">
+                <img id= "estrella" src="img\estrella2.png" alt="">
             </div>
             <div id="sea">
                 <section id="scroll-content-mar" class="fadeTop"></section>
 
                 <div id="piedramar1">
-                    <img src="..\img\piedramar1.png" alt="">
+                    <img src="img\piedramar1.png" alt="">
                 
                 </div>
 
                 <div id="piedramar2">
-                    <img src="..\img\piedramar2.png" alt="">                
+                    <img src="img\piedramar2.png" alt="">                
                 </div>
 
                 <div id="piedramar3">
-                    <img src="..\img\piedramar3.png" alt="">
+                    <img src="img\piedramar3.png" alt="">
                 </div>               
             </div>
 
-            <div id="table">
+            <div id="felicidad">
                 <div id="centeralign">
-                  <h1>Felicidad</h1>
-                  <p>La felicidad no llega cuando conseguimos lo que deseamos, sino cuando disfrutamos lo que tenemos.</p>
+                    <div>
+                        <h4 id="textoAparece1">Felicidad</h4>
+                        <p id="textoAparece2">La felicidad no llega cuando conseguimos lo que deseamos, sino cuando disfrutamos lo que tenemos.</p>
+                    </div>
+                  
                 </div>
               </div>
 
 
             <div class="erizoDivClass">
-                <div>
-                    <img id="erizo1" src="..\img\erizocuadro.png" alt="">
+                <div id="paraErizo">
+                    <img id="erizo1" src="img\erizocuadro.png" alt="">
                 </div>
 
                 <div>
-                    <img id="erizo2" src="..\img\erizo2.png" alt="">
+                    <img id="erizo2" src="img\erizo2.png" alt="">
                 </div>
             </div>
             <div id="familiaErizo">
                 <div>
-                    <img id="pared" src="..\img\pared.png" alt="">
+                    <img id="pared" src="img\pared.png" alt="">
                 </div>
                 <div>
-                    <img id="chimenea" src="..\img\chimenea.png" alt="">
+                    <img id="chimenea" src="img\chimenea.png" alt="">
                 </div>
                 <div>
-                     <img id="cuadro1" src="..\img\cuadro1.png" alt="">
+                     <img id="cuadro1" src="img\cuadro1.png" alt="">
                 </div>
                 <div>
-                    <img id="cuadro2" src="..\img\cuadro2.png" alt="">
+                    <img id="cuadro2" src="img\cuadro2.png" alt="">
                 </div>
                 <div>
-                    <img id="cuadro3" src="..\img\cuadro3.png" alt="">
+                    <img id="cuadro3" src="img\cuadro3.png" alt="">
                 </div>
                 <div>
-                    <img id="alfombra" src="..\img\alfombra.png" alt="">
+                    <img id="alfombra" src="img\alfombra.png" alt="">
                 </div>
                 <div>
-                    <img id="mamaErizo" src="..\img\mamaErizo.png" alt="">
+                    <img id="mamaErizo" src="img\mamaErizo.png" alt="">
                 </div>
                <div>
-                    <img id="mesa" src="..\img\mesa.png" alt="">
+                    <img id="mesa" src="img\mesa.png" alt="">
                 </div>
-                
+               
             </div>
 
 
             <div id="velaIdDiv">
-                
                 <section id="scroll-content" class="fadeTop"></section>
+
                 <div id="velaId">
-                    <img id="estrellita" src="..\img\estrellitas.png">
+                    <img id="estrellita" src="img\estrellitas.png">
                     <section class="fotos_botes">
                         <div>
-                            <img src="..\img\bote2.jpg"> 
+                            <img src="img\bote2.jpg"> 
                         </div>
                         <div>
-                            <img src="..\img\bote1.jpg">
+                            <img src="img\bote1.jpg">
                         </div>
                     </section>
                     
                     <section class="fotos_botes">
                         <div>
-                            <img src="../img/bote3.jpg">                    
+                            <img src="\Malospelos/img/bote3.jpg">                    
                         </div>
                         <div>
-                            <img src="../img/bote1.jpg">
+                            <img src="\Malospelos/img/bote1.jpg">
                         </div>
                     </section>
                                     
                     <section class="fotos_botes">
                         <div>
-                            <img src="../img/bote4.jpg">                    
+                            <img src="\Malospelos/img/bote4.jpg">                    
                         </div>
                         <div>
-                            <img src="../img/bote5.jpg">
+                            <img src="\Malospelos/img/bote5.jpg">
                         </div>
                     </section>
                 </div>
-            </element>
             </div>
-
-            <div class="gato">
+            <div id="root" />
+            <section class="gato">
+                <div>
+                    <img id="gatoPiedra" src="img/gatoPiedra.png" alt="">
+                </div>
                 <div>
                     <img id="gatoLuz" src="img/gatoLuz.png">
                     <section id="scroll-content-gatoLuz" class="fadeTop"></section>
-
                 </div>
-                <div>
-                    <img id="gatoPiedra" src="img/gatoPiedra.png" alt="">
-
-                </div>
-                <section id="scroll-content-gatoPiedra" class="fadeTop"></section>
-
+            </section>
+<!--                 <section id="scroll-content-gatoPiedra" class="fadeTop"></section> -->
             </div>
+
+            
+            <div class="madrigueras">
+                <div>
+                    <div id="felicidad2">
+                        <div id="centeralign">
+                            <div>
+                                <h4 id="textoAparece3">NATSUKASHII</h4>
+                                <p id="textoAparece4"> Palabra japonesa que significa «nostalgia feliz», es el instante en el que la memoria de repente te transporta a un bello recuerdo que te llena de dulzura.</p>
+                            </div>
+                          
+                        </div>
+                      </div>
+            </div>
+        </div>
+
 
         </main>
         <footer>

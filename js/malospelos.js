@@ -1,7 +1,10 @@
 const vela = document.getElementById("velaId");
 const gato = document.getElementById("gatoLuz");
 
-const texto1 = document.getElementById("table");
+const texto1 = document.getElementById("textoAparece1");
+const texto2 = document.getElementById("textoAparece2");
+const texto3 = document.getElementById("textoAparece3");
+const texto4 = document.getElementById("textoAparece4");
 
 const pared_erizo = document.getElementById("pared");
 const chimenea_erizo = document.getElementById("chimenea");
@@ -19,6 +22,8 @@ const estrellita = document.getElementById("estrellita");
 const body = document.querySelector('body');
 
 var visiVela=false;
+var visiFeliz=false;
+var visiFeliz2=false;
 var visiErizo=false;
 var visiGato=false; 
 var visiMar=false;
@@ -55,10 +60,14 @@ modeSwitch.addEventListener("click" , () =>{
 // Control cuando va bajando el scroll
 window.addEventListener('scroll', function()  {
     let element = document.getElementById('estrellita');
+    let element_felicidad = document.getElementById('textoAparece1');
+    let element_felicidad2 = document.getElementById('textoAparece2');
     let element_piedramar = document.getElementById('piedramar1');
     let element_piedramar2 = document.getElementById('piedramar2');
     let element_piedramar3 = document.getElementById('piedramar3');
-    let element_erizo = document.getElementById('mesa');
+    let element_erizoPara = document.getElementById('paraErizo');
+    let element_erizo = document.getElementById('erizo1');
+    let element_erizo2 = document.getElementById('erizo2');
     let element_gatoLuz = document.getElementById('scroll-content-gatoLuz');
     let element_mar = document.getElementById('scroll-content-mar');
     let element_gatoPiedra = document.getElementById('scroll-content-gatoPiedra');
@@ -70,36 +79,62 @@ window.addEventListener('scroll', function()  {
             animaBrig(element_piedramar,0,1,"opacity",0.001);
             animaBrig(element_piedramar2,0,1,"opacity",0.001);
             animaBrig(element_piedramar3,0,1,"opacity",0.001);
-            typeEffect(texto1,1)
+            
             visiMar=true;
         }
     } 
+    if(element_felicidad.getBoundingClientRect().top<screenSize){
+        console.log("Felicidad");
+        if (visiFeliz===false){
+            typeEffect(texto1,175)
+            typeEffect(texto2,70)
+            animaBrig(texto1,0,1,"opacity",0.001);
+            animaBrig(texto2,0,1,"opacity",0.001);
+            visiFeliz=true
+        }
 
-    if(element_erizo.getBoundingClientRect().top < screenSize) {
+    }
+    
+    if(element_erizoPara.getBoundingClientRect().top  < screenSize) {
+        console.log("Llegamos a villa Erizo")
+        body.className=""
+
         if (visiErizo===false){
-            console.log("Llegamos a villa Erizo")
-            animaBrig(pared_erizo,0,1,"opacity",0.005);
-            animaScale(pared_erizo,1600,1784,3)
-            animaBrig(chimenea_erizo,0,1,"opacity",0.005);
-            animaScale(chimenea_erizo,200,266,3)
-            animaBrig(cuadro1_erizo,0,1,"opacity",0.005);
-            animaScale(cuadro1_erizo,20,85,3)
-            animaBrig(cuadro2_erizo,0,1,"opacity",0.005);
-            animaScale(cuadro2_erizo,20,85,3)
-            animaBrig(cuadro3_erizo,0,1,"opacity",0.005);
-            animaScale(cuadro3_erizo,20,85,3)
-            animaBrig(alfombra_erizo,0,1,"opacity",0.005);
-            animaScale(alfombra_erizo,200,268,3)
-            animaBrig(mama_erizo,0,1,"opacity",0.005);
-            animaScale(mama_erizo,200,268,3)
-            animaBrig(mesa_erizo,0,1,"opacity",0.005);
-            animaScale(mesa_erizo,200,354,3)
+            
+            window.setTimeout(()=>{
+                animaTop(element_erizo,450)
+                animaScale(element_erizo,350,154,3)
+                
+                animaScale(element_erizo2,350,154,3)                
+                animaTop(element_erizo2,450)
+            },2000)
+            window.setTimeout(()=>{
+                animaBrig(pared_erizo,0,1,"opacity",0.005);
+                animaScale(pared_erizo,1500,1600,3)
+                animaBrig(chimenea_erizo,0,1,"opacity",0.005);
+                animaScale(chimenea_erizo,100,245,3)
+                animaBrig(cuadro1_erizo,0,1,"opacity",0.005);
+                animaScale(cuadro1_erizo,20,85,3)
+                animaBrig(cuadro2_erizo,0,1,"opacity",0.005);
+                animaScale(cuadro2_erizo,20,85,3)
+                animaBrig(cuadro3_erizo,0,1,"opacity",0.005);
+                animaScale(cuadro3_erizo,20,85,3)
+                animaBrig(alfombra_erizo,0,1,"opacity",0.005);
+                animaScale(alfombra_erizo,200,268,3)
+                animaBrig(mama_erizo,0,1,"opacity",0.005);
+                animaScale(mama_erizo,200,268,3)
+                animaBrig(mesa_erizo,0,1,"opacity",0.005);
+                animaScale(mesa_erizo,200,354,3)
+            },4000)
+            
+
             visiErizo=true;
         }
     } 
     
     if(element.getBoundingClientRect().top < screenSize) {
         console.log('Llegamos a los botes');
+        body.className="dark"
         if (visiVela===false){
             animaScale(element,200,1784,15)
             animaBrig(element,0,1,"opacity",0.005);
@@ -113,18 +148,34 @@ window.addEventListener('scroll', function()  {
     if(element_gatoLuz.getBoundingClientRect().top < screenSize) {
         console.log('Llegamos al gato en la escalera');
         if (visiGato===false){
-            animaBrig(gato,0,1,"opacity",0.005);
+            setTimeout(()=>{
+                animaBrig(gato,0,1,"opacity",0.001);
+            },3000)
+            setTimeout(()=>{
+                animaBrig(gatoPiedra,0,1,"opacity",0.001);
+            },7000)
             visiGato=true;
         }
     }
+    if(element_felicidad2.getBoundingClientRect().top<screenSize){
+        console.log("Felicidad2");
+        if (visiFeliz2===false){
+            typeEffect(texto3,305)
+            //typeEffect(texto4,20)
+            animaBrig(texto3,0,1,"opacity",0.001);
+            animaBrig(texto4,0,1,"opacity",0.001);
+            visiFeliz2=true
+        }
 
-    if(element_gatoPiedra.getBoundingClientRect().top < screenSize) {
+    }
+
+    /* if(element_gatoPiedra.getBoundingClientRect().top < screenSize) {
         console.log('Llegamos al gatopiedra');
         if (visiGatoPiedra===false){
-            animaBrig(gatoPiedra,0,1,"opacity",0.005);
+            //animaBrig(gatoPiedra,0,1,"opacity",0.005);
             visiGatoPiedra=true;
         }
-    }
+    } */
 });
 
 function animaScale(elemento,Ini,Fin,Interval){ //Escala el elemento
@@ -140,6 +191,17 @@ function animaScale(elemento,Ini,Fin,Interval){ //Escala el elemento
                 console.log(`contador:${c}`)
                 console.log(`Elemento:${elemento.id} width:${elemento.style.width}`)
                 c=c+Interval
+            } else{
+                if (c> Fin){
+                    clearInterval(refresh);
+                }
+            }
+        } else {
+            if (c > Fin){
+                elemento.style.width= `${c}px`
+                console.log(`contador:${c}`)
+                console.log(`Elemento:${elemento.id} width:${elemento.style.width}`)
+                c=c-Interval
             } else{
                 if (c> Fin){
                     clearInterval(refresh);
@@ -209,6 +271,21 @@ function animaMar(){ //Movimiento izq der Mar
     } 
 }
 
+function animaTop(elemento,num){ //Movimiento top
+    let c=0;
+    var refresh = setInterval(() => {
+        if(c<=num){
+            c=c+1;
+            elemento.style.marginTop = c+"px"
+
+
+        } else{
+            clearInterval(refresh);
+        }
+       console.log("c:"+c+" num"+num)
+   },1)
+}
+
 function animaFondo(elemento){ //Oscurece background
     var i = 255;
     var refresh = setInterval(() => {
@@ -252,23 +329,29 @@ function stopScroll() {
 
 function typeEffect(element, speed) {
 	var text = element.innerHTML;
+    console.log("texto:"+text)
+    console.log("elemento:"+element.innerText)
 	element.innerHTML = "";
+    console.log("elemento2:"+element.innerText)
+
 	
 	var i = 0;
 	var timer = setInterval(function() {
-    if (i < text.length) {
-      element.append(text.charAt(i));
-      i++;
-    } else {
-      clearInterval(timer);
-    }
-  }, speed);
+        if (i < text.length) {
+            let log = element.append(text.charAt(i));
+            console.log(i)
+            console.log("elemento:"+element.innerHTML)
+            i++;
+        } else {
+          clearInterval(timer);
+        }
+    }, speed); 
 }
 
 
-// application
+/* // application
 var speed = 75;
-var h1 = document.querySelector('h1');
+var h1 = document.querySelector('h4');
 var p = document.querySelector('p');
 var delay = h1.innerHTML.length * speed + speed;
 
@@ -280,5 +363,5 @@ typeEffect(h1, speed);
 setTimeout(function(){
   p.style.display = "inline-block";
   typeEffect(p, speed);
-}, delay);
+}, delay); */
 

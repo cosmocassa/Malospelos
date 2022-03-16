@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
 @import url(https://fonts.googleapis.com/css?family=Tangerine:700,300,600);
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -188,10 +189,10 @@ footer div img{
 }
 
 #familiaErizo{
-    width: 100%;
     display: flex;
     margin-bottom: 550px;
-    margin-top: -407px;
+    margin-top: -803px;
+    margin-left: 102px;
 }
 
 
@@ -204,7 +205,7 @@ div #estrella{
     align-items: center;
 }
 #estrella{
-    margin: 692px 0 33px 838px;
+    margin: 692px 0 33px 749px;
     height: 200px;
     width: 200px;
 }
@@ -239,13 +240,19 @@ div #estrella{
 }
 
 #erizo1{
-    width: 400px;
-    margin: 0 auto 0 306px;
+    width: 311px;
+    z-index: 1;
+    position: relative;
+    margin-left: 300px;
+    margin-top: 0px;
 }
 
 #erizo2{
-    width: 400px;
-    margin: 2px 201px 0px 166px;
+    width: 311px;
+    z-index: 1;
+    position: relative;
+    margin-left: 300px;
+    margin-top: -1px;
 }
 
 #sea div img{
@@ -254,7 +261,7 @@ div #estrella{
     display: flex;
     border-radius: 10px;
     margin-top: 309px;
-    margin-left: 200px;
+    margin-left: 162px;
     margin-right: 100px;
    
     
@@ -269,13 +276,13 @@ div #estrella{
     background-color: rgb(255, 255, 255);
     display: flex;
     margin-top: 100px;
-    height: 2700px;
+    height: 3000px;
     width: 100%;
 }
 
 
 #velaId{
-    background-image: url(/img/botella.png);
+    background-image: url(../img/botella.png);
     background-size: 90%;
     background-position: center;
     width: 100%;
@@ -321,24 +328,33 @@ span{
 }
 
 .gato{
+    background-color: black;
+    width: 100%;
+    background-size: 100%;
+    height: 1000px;
+    margin-top: -20px;
+    display: flex;
+}
+.madrigueras{
     background-color: rgba(9, 60, 180, 0.39);
-    background-image: url(/img/gato.png);
+    background-image: url(../img/gato.png);
     width: 100%;
     background-size: 100%;
     height: 3000px;
     margin-top: -20px;
-    display: block;
+    display: flex;
 }
 
 #gatoLuz{
-    width: 35%;
-    margin: 1190px 0px 0 797px;
+    width: 65%;
+    margin: 0px 0px 0 10px; 
     filter: brightness(0);
+
 }
 
 #gatoPiedra{
-    width: 35%;
-    margin: 100px 0 0 650px;
+    width: 55%;
+    margin: 100px 100px 0 285px;
     filter: brightness(0);
 }
 
@@ -399,3 +415,33 @@ span{
     margin-top: 447px;
 }
 
+#textoAparece1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    text-align: center;
+    filter:opacity(0);
+}
+#textoAparece2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    text-align: center
+}
+
+#textoAparece3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-align: center;
+    filter:opacity(0);
+}
+#textoAparece4{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    text-align: center
+}
+#felicidad{
+    margin-top: -219px;
+}
+#felicidad2{
+    margin-top: 519px;
+    margin-left: 600px;
+}
